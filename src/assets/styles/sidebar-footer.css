@@ -1,6 +1,9 @@
-:root {
-    --default-font: 'DM Sans', sans-serif;
+
+body{
+    font-family: var(--default-font);
 }
+
+
 
 .sidebar {
     position: fixed;
@@ -12,13 +15,13 @@
 }
 
 .menu__sidebar {
-    background-color: #121212;
+    background-color: var(--primary-color);
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
 
 .menu__sidebar .logo {
-    background-color: #121212;
+    background-color: var(--primary-color);
     display: flex;
     border-radius: 8px;
     padding: 16px 0 0 16px;
@@ -38,16 +41,15 @@
 }
 
 .sidebar nav ul li a {
-    color: #b3b3b3;
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: var(--default-font);
 }
 
 .libary {
-    background-color: #121212;
-    color: #b3b3b3;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 600;
     font-size: 14px;
     border-radius: 8px;
@@ -65,12 +67,11 @@
 
 .library__button {
     margin-right: 10px;
-    color: #b3b3b3;
+    color: var(--secondary-color);
     background-color: transparent;
     border: none;
     font-size: 16px;
     font-weight: 700;
-    font-family: var(--default-font);
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -97,13 +98,12 @@
     justify-content: space-between;
     gap: 20px;
     background-color: #242424;
-    color: #b3b3b3;
+    color: var(--secondary-color);
     font-weight: 600;
     font-size: 14px;
     margin: 8px 0;
     padding: 16px 20px;
     border-radius: 10px;
-    font-family: var(--default-font);
 }
 
 .playlist__content {
@@ -114,7 +114,6 @@
 .playlist__content .text {
     padding-bottom: 14px;
     color: #fff;
-    font-family: var(--default-font);
 }
 
 .playlist__content .title {
@@ -134,7 +133,6 @@
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: var(--default-font);
     border: none;
     padding: 10px;
     margin-top: 12px;
@@ -150,7 +148,6 @@
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: var(--default-font);
     border: none;
     padding: 10px;
     margin-top: 12px;
@@ -163,7 +160,7 @@
 }
 
 .sidebar .cookies a{
-    color: #b3b3b3;
+    color: var(--secondary-color);
     font-weight: 500;
     font-size: 12px;
     text-decoration: none;
@@ -199,8 +196,11 @@
     background-image: linear-gradient(90deg, #af2896, #509bf5);
     display: flex;
     justify-content: space-between;
-    font-family: var(--default-font);
-    padding: 10px;
+    padding: 15px 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .rodape__text{
@@ -209,7 +209,6 @@
     color: #fff;
     font-weight: 400;
     font-size: 16px;
-    font-family: var(--default-font);
 }
 
 .rodape__text .rodape__text--inscrever{
@@ -222,13 +221,11 @@
 .rodape__button{
     background-color: #fff;
     color: #000;
-    border-radius: 20px;
-    font-size: 14px;
+    border-radius: 40px;
+    font-size: 16px;
     font-weight: 700;
-    font-family: var(--default-font);
     border: none;
-    padding: 10px;
-    width: 170px;
-    height: 50px;
+    padding: 14px 30px;
+    flex-shrink: 0;
     cursor: pointer;
 }
